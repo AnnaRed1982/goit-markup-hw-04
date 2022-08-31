@@ -151,7 +151,6 @@ nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   /* background-color: greenyellow; */
 }
 .nav-link:hover,
@@ -160,16 +159,19 @@ nav {
   color: var(--blue);
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .header-contact {
   color: var(--greytext);
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   display: flex;
   gap: 50px;
-
   /* background-color: greenyellow; */
 }
 .header-contact:hover,
@@ -177,13 +179,28 @@ nav {
   color: var(--blue);
 }
 .email::before {
-display: block;
-contain: "";
-height: 12px;
-background-image: url(../img/header/envelope.svg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+  display: block;
+
+  content: '';
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/advant/antenna\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--greytext);
+}
+.tel::before {
+  display: block;
+ 
+  content: '';
+  width: 10px;
+  height: 16px;
+  background-image: url(../img/advant/antenna\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--greytext);
 }
 
 /* MAIN */
@@ -263,6 +280,31 @@ background-position: center;
 .adv-item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 }
+.adv-item::before {
+  display: block;
+  content: '';
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--teamback);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../img/advant/antenna.png);
+}
+.icon-clock::before {
+  background-image: url(../img/advant/clock.png);
+}
+.icon-diagram::before {
+  background-image: url(../img/advant/diagram.png);
+}
+.icon-astron::before {
+  background-image: url(../img/advant/astronaut.png);
+}
 .adv-title {
   color: var(--accentblack);
   font-weight: 700;
@@ -339,7 +381,7 @@ background-position: center;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  
+
   color: var(--accentblack);
 }
 /* FOOTER */
