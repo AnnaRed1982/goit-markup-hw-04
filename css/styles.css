@@ -22,6 +22,7 @@
   /* BACKGROUND */
   --darkgrey: #2f303a;
   --teamback: #f5f4fa;
+  --overlaybg: #c4c4c4;
 
   /* shadow */
   --shadow: rgba(0, 0, 0, 0.15);
@@ -180,6 +181,16 @@ nav {
 
   background-color: var(--darkgrey);
   text-align: center;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--white);
@@ -389,9 +400,6 @@ nav {
 }
 .portf-progect {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-
-  
-  
 }
 
 .portf-group {
