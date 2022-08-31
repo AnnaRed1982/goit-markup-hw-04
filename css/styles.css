@@ -192,7 +192,7 @@ nav {
 }
 .tel::before {
   display: block;
- 
+
   content: '';
   width: 10px;
   height: 16px;
@@ -217,8 +217,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--overlaybg);
-  background-image: linear-gradient(/*to right,*/ var(--gradhero), var(--gradhero)),
-    url('../img/hero.jpg');
+  background-image: linear-gradient(var(--gradhero), var(--gradhero)), url('../img/hero.jpg');
   /* background-image: url('../img/hero.jpg'); */
 
   background-repeat: no-repeat;
@@ -280,31 +279,37 @@ nav {
 .adv-item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 }
-.adv-item::before {
+
+.icon-antenna::before {
+  background-image: url(../img/advant/clock\ 1.png);
+}
+.icon-clock::before {
+  background-image: url();
+}
+.icon-diagram::before {
+  background-image: url();
+}
+.icon-astron::before {
+  background-image: url();
+}
+.adv-img::before {
   display: block;
+
   content: '';
   width: 70px;
   height: 70px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.adv-img {
+  width: 270px;
+  height: 120px;
   background-color: var(--teamback);
-  border-radius: 4px;
+  border-radius: var(--btnradius);
+
+  padding: 25px 100px;
 
   margin-bottom: 30px;
 }
-.icon-antenna::before {
-  background-image: url(../img/advant/antenna.png);
-}
-.icon-clock::before {
-  background-image: url(../img/advant/clock.png);
-}
-.icon-diagram::before {
-  background-image: url(../img/advant/diagram.png);
-}
-.icon-astron::before {
-  background-image: url(../img/advant/astronaut.png);
-}
+
 .adv-title {
   color: var(--accentblack);
   font-weight: 700;
