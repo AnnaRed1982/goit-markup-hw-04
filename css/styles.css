@@ -191,12 +191,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--overlaybg);
-  background-image: linear-gradient(
-    to right,
-    var(--gradhero),
-    var(--gradhero),
-    url('../img/hero.jpg')
-  );
+  background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)),
+    url('../img/hero.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
