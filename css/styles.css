@@ -176,6 +176,15 @@ nav {
 .header-contact:focus {
   color: var(--blue);
 }
+.email::before {
+display: block;
+contain: "";
+height: 12px;
+background-image: url(../img/header/envelope.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
 
 /* MAIN */
 .hero {
@@ -191,8 +200,9 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--overlaybg);
-  background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)),
+  background-image: linear-gradient(/*to right,*/ var(--gradhero), var(--gradhero)),
     url('../img/hero.jpg');
+  /* background-image: url('../img/hero.jpg'); */
 
   background-repeat: no-repeat;
   background-position: center;
@@ -323,7 +333,15 @@ nav {
   font-size: 16px;
   line-height: 1.19;
 }
-
+/* Clients */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  
+  color: var(--accentblack);
+}
 /* FOOTER */
 .footer-page {
   background-color: var(--darkgrey);
