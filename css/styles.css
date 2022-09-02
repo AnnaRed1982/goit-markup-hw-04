@@ -262,8 +262,7 @@ nav {
 }
 
 .adv-img {
-  width: 270px;
-  height: 120px;
+  display: block;
   background-color: var(--teamback);
   border-radius: var(--btnradius);
 
@@ -284,6 +283,9 @@ nav {
 }
 .adv-text {
   width: 270px;
+}
+.adv-icon {
+  display: block;
 }
 
 /* WORK */
