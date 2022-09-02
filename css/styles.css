@@ -176,44 +176,13 @@ nav {
   gap: 10px;
 }
 .cont-svg {
-  fill: none;
-  stroke: var(--greytext);
+  fill: currentColor;
 }
-.header-contact:hover,
+.header-link:hover,
 .header-contact:focus {
   color: var(--blue);
-  stroke: var(--blue);
+  fill: var(--blue);
 }
-/* .header-contact:hover,
-.header-contact:focus {
-  color: var(--blue);
-} */
-
-/* .email::before {
-  display: block;
-
-  content: '';
-  width: 16px;
-  height: 12px;
-  background-image: url(../img/advant/antenna\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--greytext);
-}
-.tel::before {
-  display: block;
-
-  content: '';
-  width: 10px;
-  height: 16px;
-  background-image: url(../img/advant/antenna\ 1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--greytext);
-} */
-
 /* MAIN */
 .hero {
   padding-top: 200px;
