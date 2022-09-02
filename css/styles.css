@@ -25,6 +25,7 @@
   --overlaybg: #c4c4c4;
   /* Icons */
   --iconcolor: #afb1b8;
+  --iconfootr: rgba(255, 255, 255, 0.1);
   /* Gradient */
   --gradhero: rgba(47, 48, 58, 0.4);
 
@@ -176,6 +177,7 @@ nav {
   gap: 10px;
 }
 .cont-svg {
+  display: block;
   fill: currentColor;
 }
 .header-link:hover,
@@ -453,6 +455,47 @@ nav {
 .adress-contact:focus {
   color: var(--blueactive);
 }
+/* Footer social */
+.footer-cont {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.join {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--white);
+  background-color: var(--iconfootr);
+  border-radius: 50%;
+}
+.footer-item:hover,
+.footer-item:focus {
+  background-color: var(--blue);
+}
+
+.footer-icon {
+  display: block;
+  fill: currentColor;
+}
 
 /* //////////////////////////// */
 /* PORTFOLIO */
@@ -497,6 +540,11 @@ nav {
 }
 .portf-progect {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+.portf-progect:hover,
+.portf-progect:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portf-group {
