@@ -159,11 +159,6 @@ nav {
   color: var(--blue);
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .header-contact {
   color: var(--greytext);
   font-weight: 500;
@@ -174,11 +169,22 @@ nav {
   gap: 50px;
   /* background-color: greenyellow; */
 }
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cont-svg {
+  fill: none;
+  stroke: var(--greytext);
+}
+
 .header-contact:hover,
 .header-contact:focus {
   color: var(--blue);
 }
-.email::before {
+
+/* .email::before {
   display: block;
 
   content: '';
@@ -201,7 +207,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--greytext);
-}
+} */
 
 /* MAIN */
 .hero {
