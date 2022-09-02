@@ -391,9 +391,7 @@ nav {
   justify-content: center;
 }
 .client-link {
-}
-.client-box {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 
@@ -404,11 +402,12 @@ nav {
   border-radius: var(--btnradius);
   padding: 16px 32px;
 }
+
 .client-svg {
   fill: currentColor;
 }
-.client-box:hover,
-.client-box:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--blue);
   color: var(--blue);
 }
