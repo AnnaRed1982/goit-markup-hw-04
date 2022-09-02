@@ -169,6 +169,7 @@ nav {
 
   display: flex;
   gap: 50px;
+  align-items: center;
   /* background-color: greenyellow; */
 }
 .header-link {
