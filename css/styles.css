@@ -217,7 +217,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--overlaybg);
-  background-image: linear-gradient(var(--gradhero), var(--gradhero)), url('../img/hero.jpg');
+  background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)),
+    url('../img/hero.jpg');
   /* background-image: url('../img/hero.jpg'); */
 
   background-repeat: no-repeat;
@@ -279,7 +280,7 @@ nav {
 .adv-item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 }
-
+/* 
 .icon-antenna::before {
   background-image: url(../img/advant/clock\ 1.png);
 }
@@ -298,7 +299,7 @@ nav {
   content: '';
   width: 70px;
   height: 70px;
-}
+} */
 .adv-img {
   width: 270px;
   height: 120px;
