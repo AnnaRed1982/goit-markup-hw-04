@@ -260,26 +260,7 @@ nav {
 .adv-item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 }
-/* 
-.icon-antenna::before {
-  background-image: url(../img/advant/clock\ 1.png);
-}
-.icon-clock::before {
-  background-image: url();
-}
-.icon-diagram::before {
-  background-image: url();
-}
-.icon-astron::before {
-  background-image: url();
-}
-.adv-img::before {
-  display: block;
 
-  content: '';
-  width: 70px;
-  height: 70px;
-} */
 .adv-img {
   width: 270px;
   height: 120px;
@@ -396,7 +377,42 @@ nav {
   text-align: center;
 
   color: var(--accentblack);
+
+  margin-bottom: 50px;
 }
+.client-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-link {
+}
+.client-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--iconcolor);
+  background-color: var(--white);
+  color: var(--iconcolor);
+
+  border-radius: var(--btnradius);
+  padding: 16px 32px;
+}
+.client-svg {
+  fill: currentColor;
+}
+.client-box:hover,
+.client-box:focus {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
 /* FOOTER */
 .footer-page {
   background-color: var(--darkgrey);
