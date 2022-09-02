@@ -23,7 +23,8 @@
   --darkgrey: #2f303a;
   --teamback: #f5f4fa;
   --overlaybg: #c4c4c4;
-
+  /* Icons */
+  --iconcolor: #afb1b8;
   /* Gradient */
   --gradhero: rgba(47, 48, 58, 0.4);
 
@@ -178,11 +179,15 @@ nav {
   fill: none;
   stroke: var(--greytext);
 }
-
 .header-contact:hover,
 .header-contact:focus {
   color: var(--blue);
+  stroke: var(--blue);
 }
+/* .header-contact:hover,
+.header-contact:focus {
+  color: var(--blue);
+} */
 
 /* .email::before {
   display: block;
@@ -372,8 +377,7 @@ nav {
 }
 
 .team-group {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 .team-name {
   font-weight: 500;
@@ -386,7 +390,35 @@ nav {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
+/* social-icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--iconcolor);
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.social-icon {
+  fill: currentColor;
+}
+
 /* Clients */
 .clients-title {
   font-weight: 700;
